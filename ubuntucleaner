@@ -1,0 +1,18 @@
+#!/bin/bash
+echo "CE SCRIPT VA NETTOYER VOTRE SYSTEME UBUNTU & METTRE LE SYSTEME A JOUR"
+echo "-supression des paquets inutiles"
+echo "-vidage du cache"
+echo "-mise à jour des paquets"
+echo "-recherche des MAJ du système"
+read -p "Appuyer sur une touche pour continuer ..."
+echo "Mise à jour de la base de données paquets"
+sudo apt-get update
+echo "Nettoyage de Ubuntu..."
+sudo apt-get autoclean
+sudo apt-get autoremove
+echo "Mise à jour des paquets"
+sudo apt-get dist-upgrade
+echo "Mise à jour du système"
+do-release-upgrade
+echo "Terminé !"
+read -p "Appuyer sur une touche pour quitter"
