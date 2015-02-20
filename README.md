@@ -8,12 +8,12 @@ C'est tout simplement un petit script batch, qui rend les commandes automatiques
 * Il vous suffit d'aller dans Releases, et d'extraire les fichiers
 * Il faut rendre le fichier exécutable, pour cela, entrez la commande
 
-''' sh
+```sh
 chmod a+x ubuntucleaner
-'''
+```
 
 * Ensuite, pour exécuter le fichier
 
-''' sh
+```sh
 ./ubuntucleaner
-'''
+```
