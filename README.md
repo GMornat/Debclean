@@ -17,3 +17,13 @@ chmod a+x ubuntucleaner
 ```sh
 ./ubuntucleaner
 ```
+
+### Qu'est ce que ça fait concrétement ?
+* Dans un premier temps, on vous demande votre mot de passe
+* Le script met à jour la base de données de paquets
+* Puis supprime le cache et les paquets inutiles
+* Met à jour les paquets et le système
+
+### A venir
+* Version anglophone
+* Meilleure présentation
