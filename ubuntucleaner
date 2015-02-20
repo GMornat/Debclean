@@ -1,5 +1,9 @@
 #!/bin/bash
+echo "*********************************************************************"
+echo "**                          UBUNTU CLEANER                         **"
+echo "*********************************************************************"
 echo "CE SCRIPT VA NETTOYER VOTRE SYSTEME UBUNTU & METTRE LE SYSTEME A JOUR"
+echo "-mise à jour de la base de données des paquets"
 echo "-supression des paquets inutiles"
 echo "-vidage du cache"
 echo "-mise à jour des paquets"
