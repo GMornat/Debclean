@@ -20,8 +20,10 @@ Techniquement, tout système Debian, seule la distribution Ubuntu est supportée
 ```sh
 sudo chmod a+x ubuntucleaner
 ```
+* C'est prêt !
 
-* Ensuite, pour exécuter le fichier
+### Utilisation
+Il suffit d'exécuter la commande
 
 ```sh
 ./ubuntucleaner
