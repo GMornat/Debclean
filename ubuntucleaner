@@ -16,6 +16,8 @@ sudo apt-get autoclean
 sudo apt-get autoremove
 echo "Mise à jour des paquets"
 sudo apt-get dist-upgrade
+echo "Correction des dépendances"
+sudo apt-get -f install
 echo "Mise à jour du système"
 do-release-upgrade
 echo "Terminé !"
