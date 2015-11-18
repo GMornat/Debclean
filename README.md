@@ -1,35 +1,31 @@
 # UbuntuCleaner
-Un petit programme simple pour nettoyer et mettre à jour les paquets et le système
+A convienient way to keep your Ubuntu system clean, fast, and up-to-date
 
-### Comment ça marche ?
-C'est tout simplement un petit script batch, qui rend les commandes automatiques. Le programme est écrit en bash et ne pèse que quelques octets.
+### How does it work ?
+It is only a simple shell program which uses most used commands with apt and dpkg
 
-### Qu'est ce que ça fait concrètement ?
-* Dans un premier temps, on vous demande votre mot de passe
-* Le script met à jour la base de données de paquets
-* Puis supprime le cache et les paquets inutiles
-* Met à jour les paquets et le système
+### What does it do ?
+* The program uses superuser
+* Updates sources
+* Deletes cache, unused packages
+* Updates system and packages
 
-### Qui peut exécuter ce logiciel ?
-Techniquement, tout système Debian, seule la distribution Ubuntu est supportée, ainsi que toutes ses dérives xfce, gnome, KDE, et autres. Il vous faut aussi quelques connaissances avec le terminal, mais franchement ce n'est pas très compliqué, suivez juste les instructions.
+### Who can use this program ?
+Anyone with Ubuntu system or official variants (Xubuntu, Lubuntu, Kubuntu)
 
-### Comment installer ubuntucleaner ?
-* Il vous suffit d'aller dans Releases, télécharger le code source, et d'extraire les fichiers. Vous pouvez aussi utiliser git clone. A vous de voir. 
-* Il faut rendre le fichier exécutable, pour cela, entrez la commande
+### How to launch the program ?
+* Download source code
+* Make the program executable
 
 ```sh
 sudo chmod a+x ubuntucleaner
 ```
-* C'est prêt !
-
-### Utilisation
-Il suffit d'exécuter la commande
+* Then use this command
 
 ```sh
 ./ubuntucleaner
 ```
 
-### A venir
-* Version anglophone
-* Meilleure présentation
-* Votre aide aimable ?
+### To do list
+* Other ideas
+* Your help
