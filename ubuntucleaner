@@ -2,23 +2,22 @@
 echo "*********************************************************************"
 echo "**                          UBUNTU CLEANER                         **"
 echo "*********************************************************************"
-echo "CE SCRIPT VA NETTOYER VOTRE SYSTEME UBUNTU & METTRE LE SYSTEME A JOUR"
-echo "-mise à jour de la base de données des paquets"
-echo "-supression des paquets inutiles"
-echo "-vidage du cache"
-echo "-mise à jour des paquets"
-echo "-recherche des MAJ du système"
-read -p "Appuyer sur une touche pour continuer ..."
-echo "Mise à jour de la base de données paquets"
-sudo apt-get update
-echo "Nettoyage de Ubuntu..."
-sudo apt-get autoclean
-sudo apt-get autoremove
-echo "Mise à jour des paquets"
+echo "This script will clean your entire Ubuntu system "
+echo "If you don't know what will happen to your system, close this window"
+echo "and go to --> github.com/GMornat/ubuntucleaner"
+echo "We aren't responsible for any brick or something else"
+echo "THIS PROGRAM USES SUPERUSER. BE CAREFUL !"
+read -p "Press any prompt to continue"
+echo "Updating sources"
+sudo apt-get update -y
+echo "Cleaning"
+sudo apt-get autoclean -y
+sudo apt-get autoremove -y
+echo "Updating packages"
 sudo apt-get dist-upgrade
-echo "Correction des dépendances"
-sudo apt-get -f install
-echo "Mise à jour du système"
+echo "Correcting dependecies"
+sudo apt-get -f -y install
+echo "Updating system"
 do-release-upgrade
-echo "Terminé !"
-read -p "Appuyer sur une touche pour quitter"
+echo "Complete!"
+read -p "Press any prompt to leave the program"
