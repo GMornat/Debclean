@@ -14,7 +14,7 @@ echo "Cleaning"
 sudo apt-get autoclean -y
 sudo apt-get autoremove -y
 echo "Updating packages"
-sudo apt-get dist-upgrade
+sudo apt-get dist-upgrade -y
 echo "Correcting dependecies"
 sudo apt-get -f -y install
 echo "Updating system"
