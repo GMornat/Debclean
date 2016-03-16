@@ -17,6 +17,9 @@ echo "Updating packages"
 sudo apt-get dist-upgrade -y
 echo "Correcting dependecies"
 sudo apt-get -f -y install
+echo "Cleaning..."
+echo "..."
+sudo apt-get autoclean -y
 echo "Updating system"
 do-release-upgrade
 echo "Complete!"
