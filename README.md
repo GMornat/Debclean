@@ -11,7 +11,7 @@ It is only a simple shell program which uses most used commands with apt and dpk
 * Updates system and packages
 
 ### Who can use this program ?
-Anyone with Ubuntu system or official variants (Xubuntu, Lubuntu, Kubuntu)
+Anyone with a GNU/Linux system which has Aptitude (apt) package manager
 
 ### How to launch the program ?
 * Download source code
@@ -25,6 +25,8 @@ sudo chmod a+x ubuntucleaner
 ```sh
 ./ubuntucleaner
 ```
+### Note !
+- ubuntucleaner is released under GPL v3. For more info, please check [GNU Project website](https://www.gnu.org/licenses/licenses.html)
 
 ### To do list
 * Other ideas
