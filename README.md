@@ -18,12 +18,12 @@ Anyone with a GNU/Linux system which has Aptitude (apt) package manager
 * Make the program executable
 
 ```sh
-sudo chmod a+x ubuntucleaner
+sudo chmod a+x debclean
 ```
 * Then use this command
 
 ```sh
-./ubuntucleaner
+./debclean
 ```
 ### Note !
 - Debclean is released under GPL v3. For more info, please check [GNU Project website](https://www.gnu.org/licenses/licenses.html)
