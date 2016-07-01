@@ -4,22 +4,22 @@ normal=$(tput sgr0)
 echo "${bold}*********************************************************************"
 echo "${bold}**                          UBUNTU CLEANER                         **"
 echo "${bold}*********************************************************************"
-echo "${bold}This script will clean your entire Ubuntu system "
-echo "${bold}If you don't know what will happen to your system, close this window"
-echo "${bold}and go to --> github.com/GMornat/ubuntucleaner"
-echo "${bold}We aren't responsible for any brick or something else"
-echo "${bold}THIS PROGRAM USES SUPERUSER. BE CAREFUL !"
-read -p "${bold}Press any prompt to continue"
+echo "${bold}This script will clean your entire Ubuntu system"${normal}"
+echo "${bold}If you don't know what will happen to your system, close this window}"
+echo "and go to --> github.com/GMornat/ubuntucleaner"
+echo "We aren't responsible for any brick or something else${normal}"
+echo "${bold}THIS PROGRAM USES SUPERUSER. BE CAREFUL !${normal}"
+read -p "${bold}Press any prompt to continue${normal}"
 echo "${bold}Updating sources"
 sudo apt-get update -y
-echo "${bold}Cleaning"
+echo "${bold}Cleaning${normal}"
 sudo apt-get autoclean -y
 sudo apt-get autoremove -y
-echo "${bold}Updating packages"
+echo "${bold}Updating packages${normal}"
 sudo apt-get dist-upgrade -y
-echo "${bold}Correcting dependecies"
+echo "${bold}Correcting dependecies${normal}"
 sudo apt-get -f -y install
-echo "${bold}Cleaning..."
+echo "${bold}Cleaning...${normal}"
 sudo apt-get autoclean -y
-echo "${bold}Complete!"
-read -p "${bold}Press any prompt to leave the program"
+echo "${bold}Complete!${normal}"
+read -p "${bold}Press any prompt to leave the program${normal}"
