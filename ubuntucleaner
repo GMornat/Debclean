@@ -10,7 +10,7 @@ echo "and go to --> github.com/GMornat/ubuntucleaner"
 echo "We aren't responsible for any brick or something else${normal}"
 echo "${bold}THIS PROGRAM USES SUPERUSER. BE CAREFUL !${normal}"
 read -p "${bold}Press any prompt to continue${normal}"
-echo "${bold}Updating sources"
+echo "${bold}Updating sources${normal}"
 sudo apt-get update -y
 echo "${bold}Cleaning${normal}"
 sudo apt-get autoclean -y
