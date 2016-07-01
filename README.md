@@ -1,5 +1,5 @@
-# UbuntuCleaner
-A convienient way to keep your Ubuntu system clean, fast, and up-to-date
+# Debclean
+A convienient way to keep your Debian based system clean, fast, and up-to-date
 
 ### How does it work ?
 It is only a simple shell program which uses most used commands with apt and dpkg
