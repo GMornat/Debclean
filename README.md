@@ -26,7 +26,7 @@ sudo chmod a+x ubuntucleaner
 ./ubuntucleaner
 ```
 ### Note !
-- ubuntucleaner is released under GPL v3. For more info, please check [GNU Project website](https://www.gnu.org/licenses/licenses.html)
+- Debclean is released under GPL v3. For more info, please check [GNU Project website](https://www.gnu.org/licenses/licenses.html)
 
 ### To do list
 * Other ideas
