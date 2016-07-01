@@ -1,26 +1,25 @@
 #!/bin/bash
-echo "*********************************************************************"
-echo "**                          UBUNTU CLEANER                         **"
-echo "*********************************************************************"
-echo "This script will clean your entire Ubuntu system "
-echo "If you don't know what will happen to your system, close this window"
-echo "and go to --> github.com/GMornat/ubuntucleaner"
-echo "We aren't responsible for any brick or something else"
-echo "THIS PROGRAM USES SUPERUSER. BE CAREFUL !"
-read -p "Press any prompt to continue"
-echo "Updating sources"
+bold=$(tput bold)
+normal=$(tput sgr0)
+echo "${bold}*********************************************************************"
+echo "${bold}**                          UBUNTU CLEANER                         **"
+echo "${bold}*********************************************************************"
+echo "${bold}This script will clean your entire Ubuntu system "
+echo "${bold}If you don't know what will happen to your system, close this window"
+echo "${bold}and go to --> github.com/GMornat/ubuntucleaner"
+echo "${bold}We aren't responsible for any brick or something else"
+echo "${bold}THIS PROGRAM USES SUPERUSER. BE CAREFUL !"
+read -p "${bold}Press any prompt to continue"
+echo "${bold}Updating sources"
 sudo apt-get update -y
-echo "Cleaning"
+echo "${bold}Cleaning"
 sudo apt-get autoclean -y
 sudo apt-get autoremove -y
-echo "Updating packages"
+echo "${bold}Updating packages"
 sudo apt-get dist-upgrade -y
-echo "Correcting dependecies"
+echo "${bold}Correcting dependecies"
 sudo apt-get -f -y install
-echo "Cleaning..."
-echo "..."
+echo "${bold}Cleaning..."
 sudo apt-get autoclean -y
-echo "Updating system"
-do-release-upgrade
-echo "Complete!"
-read -p "Press any prompt to leave the program"
+echo "${bold}Complete!"
+read -p "${bold}Press any prompt to leave the program"
