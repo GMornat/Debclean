@@ -2,11 +2,11 @@
 bold=$(tput bold)
 normal=$(tput sgr0)
 echo "${bold}*********************************************************************"
-echo "${bold}**                          UBUNTU CLEANER                         **"
+echo "${bold}**                             DEBCLEAN                            **"
 echo "${bold}*********************************************************************"
 echo "${bold}This script will clean your entire Debian system${normal}"
 echo "${bold}If you don't know what will happen to your system, close this window"
-echo "and go to --> github.com/GMornat/ubuntucleaner"
+echo "and go to --> github.com/GMornat/debcleanr"
 echo "We aren't responsible for any brick or something else${normal}"
 echo "${bold}THIS PROGRAM USES SUPERUSER. BE CAREFUL !${normal}"
 read -p "${bold}Press any prompt to continue${normal}"
