@@ -1,0 +1,25 @@
+#!/bin/bash
+bold=$(tput bold)
+normal=$(tput sgr0)
+echo "${bold}*********************************************************************"
+echo "${bold}**                             DEBCLEAN                            **"
+echo "${bold}*********************************************************************"
+echo "${bold}This script will clean your entire Debian system${normal}"
+echo "${bold}If you don't know what will happen to your system, close this window"
+echo "and go to --> github.com/GMornat/debcleanr"
+echo "We aren't responsible for any brick or something else${normal}"
+echo "${bold}THIS PROGRAM USES SUPERUSER. BE CAREFUL !${normal}"
+read -p "${bold}Press any prompt to continue${normal}"
+echo "${bold}Updating sources${normal}"
+sudo apt-get update -y
+echo "${bold}Cleaning${normal}"
+sudo apt-get autoclean -y
+sudo apt-get autoremove -y
+echo "${bold}Updating packages${normal}"
+sudo apt-get dist-upgrade -y
+echo "${bold}Correcting dependecies${normal}"
+sudo apt-get -f -y install
+echo "${bold}Cleaning...${normal}"
+sudo apt-get autoclean -y
+echo "${bold}Complete!${normal}"
+read -p "${bold}Press any prompt to leave the program${normal}"

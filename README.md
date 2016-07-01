@@ -1,5 +1,5 @@
-# UbuntuCleaner
-A convienient way to keep your Ubuntu system clean, fast, and up-to-date
+# Debclean
+A convienient way to keep your Debian based system clean, fast, and up-to-date
 
 ### How does it work ?
 It is only a simple shell program which uses most used commands with apt and dpkg
@@ -26,7 +26,7 @@ sudo chmod a+x ubuntucleaner
 ./ubuntucleaner
 ```
 ### Note !
-- ubuntucleaner is released under GPL v3. For more info, please check [GNU Project website](https://www.gnu.org/licenses/licenses.html)
+- Debclean is released under GPL v3. For more info, please check [GNU Project website](https://www.gnu.org/licenses/licenses.html)
 
 ### To do list
 * Other ideas
