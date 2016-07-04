@@ -10,16 +10,17 @@ echo "and go to --> github.com/GMornat/debclean"
 echo "We aren't responsible for any brick or something else${normal}"
 echo "${bold}THIS PROGRAM USES SUPERUSER. BE CAREFUL !${normal}"
 read -p "${bold}Press any prompt to continue${normal}"
-echo "${bold}Updating sources${normal}"
+echo "${bold}Updating packages list & tree from repositories source${normal}"
 sudo apt-get update -y
-echo "${bold}Cleaning${normal}"
+echo "${bold}Cleaning and removing unused packages${normal}"
 sudo apt-get autoclean -y
 sudo apt-get autoremove -y
 echo "${bold}Updating packages${normal}"
 sudo apt-get dist-upgrade -y
 echo "${bold}Correcting dependecies${normal}"
 sudo apt-get -f -y install
-echo "${bold}Cleaning...${normal}"
+echo "${bold}Cleaning${normal}"
 sudo apt-get autoclean -y
 echo "${bold}Complete!${normal}"
+echo "${bold}--- THANKS FOR USING DEBCLEAN ---${normal}"
 read -p "${bold}Press any prompt to leave the program${normal}"
